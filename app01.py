@@ -12,16 +12,24 @@ tracker = 0
 while tracker !=1:
   
   print("Q"+str(counter)+") "+ "find y if 8x2+4/y=22?")
+  print("   a) 22")
+  print("   b) 24")
+  print("   c) 14")
+  print("   d) 6")
   answer = input("Your answer: ")
   answer = answer.lower()
-  if answer == "24":
+  if answer == "b":
     output = "correct!:)")
     score +=1
-  else answer == "1-999":
+  else answer == "a":
     output = "Wrong. Clue:4/y=22-8x2."
     score -=1
-
-    
+  else answer == "c":
+    output = "Wrong. Clue:4/y=22-8x2."
+    score -=1
+  else answer == "d":
+    output = "Wrong. Clue:4/y=22-8x2."
+    score -=1
   
   print()
   print(output)
